@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="scripts/main.js" defer></script>
+    
+
     <title>SpaceX Dashboard</title>
 </head>
 <body>
     <div></div>
     <div class="container">
         <div class="item">
-            <h2>Speed</h2>
-            <a></a>
+            <h2>Fuel</h2>
+                <canvas id="fuelChart"></canvas>
         </div>
         <div class="item">
             <h2>Food</h2>
-            <a></a>
+                <canvas id="foodChart"></canvas>
         </div>
         <div class="item">
-            <h2>Gravity</h2>
-            <a></a>
+            <h2>Distance traveled</h2>
+            <canvas id="distancePieChart"></canvas>
         </div>
     </div>
 </body>
