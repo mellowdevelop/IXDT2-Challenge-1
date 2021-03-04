@@ -1,0 +1,81 @@
+@font-face {
+    font-family: BrandonMedium;
+    src: url(BrandonMedium.otf);
+  }
+  @font-face {
+    font-family: BrandonRegular;
+    src: url(BrandonRegular.otf);
+  }
+  @font-face {
+    font-family: BrandonLight;
+    src: url(BrandonLight.otf);
+  }
+  body{
+    background-color: #0d0f12;
+  }
+  *{
+    font-family: BrandonMedium;
+    color: white;
+  }
+  h2{
+      font-family: BrandonRegular;
+      text-align: center;
+      color: white;
+      background-color: #2b3038;
+  }
+  .logo-link{
+    width: 100%;
+    height: auto;
+  }
+  .logo{
+    display: grid;
+    justify-content: center;
+  }
+  .welcome{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+  img.welcome-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+
+  }
+  .item{
+    margin: auto;
+  }
+
+  /* Media queries */
+  @media only screen and (device-width: 768px) {
+    /* For general iPad layouts */
+    .container{
+      flex-direction: column;
+    }
+    .item{
+      width: 100%;
+    }
+    canvas{
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .container{
+      flex-direction: column;
+    }
+    h2{
+      font-size: small;
+    }
+    img.welcome-photo{
+      width: 100%;
+    }
+    .logo{
+      justify-content: flex-start;
+    }
+  }

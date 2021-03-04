@@ -5,12 +5,13 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['Liftoff', 'First cycle', 'Second cycle', 'Third cycle', 'Fourth cycle'],
         datasets: [{
             label: 'Fuel',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [50, 45, 40, 35, 30, 25, 0]
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1,
+            data: [50, 50, 45, 35, 30]
         }]
     },
 
@@ -19,11 +20,11 @@ var chart = new Chart(ctx, {
 });
 var barctx = document.getElementById('foodChart').getContext('2d');
 var myChart = new Chart(barctx, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
-        labels: ['Red', 'Blue'],
+        labels: ['Food', 'Hunger'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Food supply',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -51,7 +52,15 @@ var myDoughnutChart = new Chart(piectx, {
     type: 'doughnut',
     data: {
         datasets: [{
-            data:[10, 20]
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)'
+            ],
+            data:[150, 200]
         }],
         labels: [
             'Traveled',
