@@ -53,6 +53,27 @@
   }
 
   /* Media queries */
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      img.welcome-photo{
+        width: 80%;
+      }
+      body{
+        width: 95%;
+      }
+      .container{
+        flex-direction: column;
+      }
+      .item{
+        width: 100%;
+      }
+      canvas{
+        margin: auto;
+        width: 80%;
+      }
+    }
   @media only screen and (device-width: 768px) {
     /* For general iPad layouts */
     .container{
