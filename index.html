@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="scripts/main.js" defer></script>
+    
+
+    <title>SpaceX Dashboard</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html" class="logo-link">
+            <img class="logo" src='images/spacex-vector-logo.svg' alt="Logo SpaceX" />
+        </a>
+    </div>
+
+    <div class="welcome">
+        <h1>Welcome passenger</h1>
+        <h4>Below you will see vital information regarding your trip. 
+            Have a nice flight.
+        </h4>
+    </div>
+    <img class="welcome-photo" src="images/space-view.png">
+    <div class="container">
+        <div class="item">
+            <h2>FUEL</h2>
+                <canvas id="fuelChart"></canvas>
+        </div>
+        <div class="item">
+            <h2>FOOD</h2>
+                <canvas id="foodChart"></canvas>
+        </div>
+        <div class="item">
+            <h2>DISTANCE TRAVELED</h2>
+            <canvas id="distancePieChart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
