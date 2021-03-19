@@ -10,11 +10,12 @@
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/clock.js" defer></script>
     
 
     <title>SpaceX Dashboard</title>
 </head>
-<body>
+<body onload="startTime()">
     <div class="logo">
         <a href="index.html" class="logo-link">
             <img class="logo" src='images/spacex-vector-logo.svg' alt="Logo SpaceX" />
@@ -26,8 +27,11 @@
         <h4>Below you will see vital information regarding your trip. 
             Have a nice flight.
         </h4>
+        
     </div>
-    <img class="welcome-photo" src="images/space-view.png">
+    <h2>TIME</h2>
+    <div id="time" class="time"></div>
+    <img class="welcome-photo" src="images/space-view.png" id="welcome-photo">
     <div class="container">
         <div class="item">
             <h2>FUEL</h2>
